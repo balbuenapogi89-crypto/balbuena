@@ -1,0 +1,174 @@
+.dashboard-content-grid{
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+    margin-top:30px;
+
+}
+
+.dashboard-card{
+
+    background:white;
+    border-radius:22px;
+    padding:25px;
+    box-shadow:var(--shadow);
+    margin-bottom:25px;
+
+}
+
+.card-title{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+
+}
+
+.card-title button{
+
+    border:none;
+    background:var(--primary-light);
+    color:var(--primary);
+    padding:8px 15px;
+    border-radius:10px;
+    font-weight:600;
+
+}
+
+.employee-item{
+
+    display:flex;
+    align-items:center;
+    padding:15px 0;
+    border-bottom:1px solid var(--border);
+
+}
+
+.avatar{
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+
+    margin-right:15px;
+
+}
+
+.employee-info{
+
+    flex:1;
+
+}
+
+.employee-info span{
+
+    color:var(--gray);
+    font-size:14px;
+
+}
+
+.status{
+
+    background:#DCFCE7;
+    color:#15803D;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+.attendance-item{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.attendance-item span{
+
+    color:var(--gray);
+
+}
+
+.quick-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:20px;
+
+}
+
+.quick-grid button{
+
+    border:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.quick-grid button:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-5px);
+
+}
+
+.quick-grid svg{
+
+    font-size:28px;
+
+}
+
+.announcement-list{
+
+    margin-top:20px;
+    list-style:none;
+
+}
+
+.announcement-list li{
+
+    padding:14px 0;
+
+    border-bottom:1px solid var(--border);
+
+}

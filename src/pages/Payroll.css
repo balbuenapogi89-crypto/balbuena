@@ -1,0 +1,336 @@
+/* =================================
+   NOVAHR PAYROLL DESIGN
+================================= */
+
+
+.content{
+
+width:100%;
+
+padding:35px;
+
+background:#f8f9fc;
+
+min-height:100vh;
+
+}
+
+
+
+/* HEADER */
+
+.page-header{
+
+margin-bottom:30px;
+
+}
+
+
+
+.page-header h1{
+
+font-size:32px;
+
+font-weight:700;
+
+color:#333;
+
+margin-bottom:8px;
+
+}
+
+
+
+.page-header p{
+
+color:#777;
+
+font-size:15px;
+
+}
+
+
+
+/* ================================
+   PAYROLL SUMMARY CARDS
+================================ */
+
+
+.payroll-summary{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-bottom:35px;
+
+}
+
+
+
+
+
+.payroll-card{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+border:1px solid #f3d6e2;
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,.06);
+
+transition:.3s;
+
+}
+
+
+
+
+
+.payroll-card:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+
+
+.payroll-card svg{
+
+width:55px;
+
+height:55px;
+
+padding:15px;
+
+border-radius:18px;
+
+background:#fde2ec;
+
+color:#c2185b;
+
+}
+
+
+
+
+
+.payroll-card span{
+
+display:block;
+
+font-size:14px;
+
+color:#777;
+
+margin-bottom:5px;
+
+}
+
+
+
+
+
+.payroll-card h2{
+
+font-size:25px;
+
+color:#333;
+
+}
+
+
+
+
+
+/* ================================
+   PAYROLL TABLE
+================================ */
+
+
+.payroll-table{
+
+width:100%;
+
+background:white;
+
+border-collapse:collapse;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,.06);
+
+}
+
+
+
+
+
+.payroll-table thead{
+
+background:#fde7ef;
+
+}
+
+
+
+
+
+.payroll-table th{
+
+padding:16px;
+
+text-align:left;
+
+color:#c2185b;
+
+font-size:14px;
+
+}
+
+
+
+
+
+.payroll-table td{
+
+padding:16px;
+
+border-bottom:1px solid #eee;
+
+color:#555;
+
+font-size:14px;
+
+}
+
+
+
+
+
+.payroll-table tbody tr:hover{
+
+background:#fff7fa;
+
+}
+
+
+
+
+
+/* ================================
+   STATUS
+================================ */
+
+
+.pending{
+
+background:#fef3c7;
+
+color:#b45309;
+
+padding:7px 15px;
+
+border-radius:20px;
+
+font-size:13px;
+
+font-weight:600;
+
+}
+
+
+
+
+
+.paid{
+
+background:#dcfce7;
+
+color:#15803d;
+
+padding:7px 15px;
+
+border-radius:20px;
+
+font-size:13px;
+
+font-weight:600;
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+
+.payroll-table{
+
+display:block;
+
+overflow-x:auto;
+
+}
+
+
+
+.payroll-summary{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+.status-select{
+    padding:8px 12px;
+    border-radius:8px;
+    border:none;
+    font-weight:600;
+    cursor:pointer;
+    outline:none;
+}
+
+.status-select.pending{
+    background:#FEF3C7;
+    color:#92400E;
+}
+
+.status-select.paid{
+    background:#DCFCE7;
+    color:#166534;
+}
+
+.status-select.cancelled{
+    background:#FEE2E2;
+    color:#991B1B;
+}

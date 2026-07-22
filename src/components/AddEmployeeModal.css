@@ -1,0 +1,146 @@
+.modal-overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    backdrop-filter:blur(6px);
+
+    z-index:999;
+
+}
+
+.modal{
+
+    width:900px;
+    max-width:95%;
+
+    background:white;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+
+}
+
+.modal-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 30px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.modal-header button{
+
+    border:none;
+    background:none;
+    font-size:20px;
+    cursor:pointer;
+
+}
+
+.modal-body{
+
+    padding:30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.form-group input,
+.form-group select{
+
+    padding:13px 15px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+}
+
+.form-group input:focus,
+.form-group select:focus{
+
+    border-color:var(--primary);
+
+}
+
+.modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    padding:25px 30px;
+
+    border-top:1px solid var(--border);
+
+}
+
+.cancel-btn{
+
+    border:none;
+
+    background:#E5E7EB;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+}
+
+.save-btn{
+
+    border:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+}
+
+.save-btn:hover{
+
+    background:var(--primary-dark);
+
+}

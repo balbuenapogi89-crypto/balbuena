@@ -1,0 +1,193 @@
+/* EmployeeRow.css */
+
+
+.employee-profile{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+
+.employee-avatar{
+
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #06b6d4
+    );
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:700;
+
+}
+
+
+
+.employee-profile h4{
+
+    margin:0;
+
+    font-size:14px;
+
+    color:#1e293b;
+
+}
+
+
+
+.employee-profile span{
+
+    font-size:12px;
+
+    color:#64748b;
+
+}
+
+
+
+/* Department */
+
+.department-badge{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* Status */
+
+.status{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+
+
+.status.active{
+
+    background:#dcfce7;
+
+    color:#16a34a;
+
+}
+
+
+
+.status.inactive{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}
+
+
+
+
+
+/* Actions */
+
+
+.employee-actions{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+
+
+.employee-actions button{
+
+    width:35px;
+
+    height:35px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+.edit-btn{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+}
+
+
+
+.edit-btn:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+
+
+.delete-btn{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}
+
+
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+    color:white;
+
+}

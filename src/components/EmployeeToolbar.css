@@ -1,0 +1,61 @@
+.employee-toolbar{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.employee-toolbar input{
+
+    flex:1;
+
+}
+
+.employee-toolbar input,
+.employee-toolbar select{
+
+    padding:14px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+    background:white;
+
+}
+
+.employee-toolbar input:focus,
+.employee-toolbar select:focus{
+
+    border-color:var(--primary);
+
+}
+
+.employee-toolbar button{
+
+    border:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px 22px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.employee-toolbar button:hover{
+
+    background:var(--primary-dark);
+
+}

@@ -1,0 +1,73 @@
+.layout{
+
+    display:flex;
+
+    background:var(--background);
+
+}
+
+.content{
+
+    margin-left:270px;
+
+    width:calc(100% - 270px);
+
+    min-height:100vh;
+
+    padding:30px;
+
+}
+
+/* Welcome Banner */
+
+.welcome{
+
+    margin-top:30px;
+
+    background:linear-gradient(
+        135deg,
+        #6D28D9,
+        #8B5CF6
+    );
+
+    color:white;
+
+    border-radius:25px;
+
+    padding:50px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.welcome h1{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.welcome p{
+
+    font-size:18px;
+
+    opacity:.9;
+
+}
+
+/* Glass Cards (Ready for next part) */
+
+.card{
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    border:1px solid rgba(255,255,255,.5);
+
+}

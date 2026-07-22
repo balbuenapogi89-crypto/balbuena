@@ -1,0 +1,160 @@
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar {
+
+    width: 260px;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background: #5B21B6;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 28px 20px;
+
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 45px;
+
+}
+
+.logo h2 {
+
+    font-size: 24px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+.logo span {
+
+    color: #DDD6FE;
+
+}
+
+/* ==========================
+   MENU
+========================== */
+
+.sidebar nav {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+.sidebar nav a {
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px 18px;
+
+    border-radius: 14px;
+
+    color: rgba(255,255,255,.85);
+
+    text-decoration: none;
+
+    transition: .3s;
+
+    font-weight: 500;
+
+}
+
+/* Transparent icon */
+
+.sidebar nav a svg {
+
+    font-size: 21px;
+
+    background: transparent;
+
+    color: inherit;
+
+}
+
+/* Hover */
+
+.sidebar nav a:hover {
+
+    background: rgba(255,255,255,.12);
+
+    color: white;
+
+    transform: translateX(6px);
+
+}
+
+/* Active */
+
+.sidebar nav a.active {
+
+    background: rgba(255,255,255,.18);
+
+    color: white;
+
+    font-weight: 600;
+
+}
+
+/* ==========================
+   LOGOUT
+========================== */
+
+.logout {
+
+    margin-top: auto;
+
+}
+
+.logout a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px 18px;
+
+    border-radius: 14px;
+
+    color: rgba(255,255,255,.85);
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.logout a:hover {
+
+    background: rgba(255,255,255,.12);
+
+    color: white;
+
+}
